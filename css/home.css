@@ -7,7 +7,7 @@
 }
 
 html{
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 .menu-items {
@@ -50,6 +50,10 @@ html{
   cursor: pointer;
 }
 
+a{
+  text-decoration: none;
+}
+
 .front-pg{
   margin-top: 1cm;
   box-shadow: 15px 15px 50px lightgray;
@@ -82,14 +86,6 @@ html{
   text-align: center;
   font-weight: 500;
   cursor: default;
-
-  animation-name: txt;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-delay: 2s;
-  visibility: hidden;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
 }
 
 .front-cta {
@@ -129,11 +125,6 @@ html{
 }
 
 /* section . help  */
-
-
-.help {
-
-}
 
 .help-div{
   padding: 40px 50px;
@@ -202,7 +193,7 @@ padding-bottom: 50px;
 
 }
 
-.image-3 .image-x-text .cta-lets-create-now{
+.image-3 .image-x-text .cta-lets-create-now a{
   background-color: #6b73fc;
   display: inline-block;
   flex-direction: column;
@@ -214,13 +205,10 @@ padding-bottom: 50px;
   box-shadow: 0px 0px 25px lightgray;
 }
 
-.image-3 .image-x-text .cta-lets-create-now:hover{
+.image-3 .image-x-text .cta-lets-create-now a:hover{
   background-color:#9398f6;
   transition: all ease-in 300ms;
-}
-
-footer{
-/* background-color: red; */
+  color: white;
 }
 
 footer .footer-div{
@@ -237,6 +225,7 @@ footer .footer-div .contactUs{
   font-family: 'Montserrat', sans-serif; 
   color: whitesmoke;
   margin-right: 30px;
+  cursor: default;
 }
 
 .social-media div{
@@ -256,13 +245,6 @@ footer .footer-div .contactUs{
 -moz-filter: grayscale(100%) brightness(108%) saturate(97%) contrast(63%);
 }
 
-
-@keyframes txt {
-  from {
-    visibility: hidden;
-  }
-
-  to {
-    visibility: visible;
-  }
+.hidden{
+  display:none;
 }

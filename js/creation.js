@@ -30,6 +30,7 @@ var hindiValue;
 
 var nextBtnClick = 0;
 const navBar = document.querySelector(".menu-items");
+const navBarCreation = document.querySelector('.Creation-NavBar');
 const resumePdf = document.querySelector("#resume-download-pdf");
 const downloadBtn = document.querySelector(".download-btn");
 
@@ -82,6 +83,7 @@ nextBtn.addEventListener("click", () => {
     question2.classList.remove("hidden");
     sideImg.setAttribute("src", "/assets/q-2.png");
     sideImg.setAttribute("height", "422px");
+    navBarCreation.classList.remove('hidden')
   } else if (nextBtnClick == 2) {
     question2.classList.add("hidden");
     fullNameValue = fullNameInput.value;
