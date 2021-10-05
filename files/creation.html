@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/main-icon.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="/css/creation.css">
+    <link rel="stylesheet" href="/css/showingCoping.css">
+    <title>Creating a New Resume</title>
+</head>
+
+<body>
+    <section class="body ">
+
+        <!-- navigation bar  -->
+        <section class="menu-items">
+            <ul>
+                <li>Feedback</li>
+                <li>About Us</li>
+                <li>Home</li>
+            </ul>
+        </section>
+
+        <div class="main ">
+
+            <!-- Job title  -->
+
+            <section class="question-1 question-heading">
+                <label class="question-label" for="jobTitle">Wanted Job Title
+                    <img onclick="jobTitle()" src="/icons/info-icon.png" class="info" height="15px">
+                </label>
+                <input autocomplete="off" type="text" name="jobTitle" class="input-text"
+                    placeholder="e.g. Assistant Social Media Manager" id="jobTitleInput">
+                <hr class="hr">
+            </section>
+
+
+            <!-- Full name  -->
+
+            <section class="question-2 question-heading hidden">
+                <label class="question-label" for="name">Full Name</label>
+                <input class="input-text" autocomplete="off" type="text" name="name" placeholder="e.g. Himanshu Pal"
+                    id="fullNameInput">
+                <hr class="hr">
+            </section>
+
+
+            <!-- email  -->
+
+            <section class="question-3 question-heading hidden">
+                <label class="question-label" for="email">E-mail
+                </label>
+                <input class="input-text" autocomplete="off" type="email" name="email"
+                    placeholder="e.g. xyz@example.com" id="emailInput">
+                <hr class="hr">
+            </section>
+
+
+            <!-- phoneNumber  -->
+
+            <section class="question-4 question-heading hidden">
+                <label class="question-label" for="phoneNumber">Phone Number
+                </label>
+                <input class="input-text input-number" autocomplete="off" type="tel" minlength="10" size="10"
+                    maxlength="10" name="phoneNumber" placeholder="e.g. 9876543210" id="phoneNumberInput">
+                <hr class="hr">
+            </section>
+
+
+            <!-- professionalSummary  -->
+
+            <section class="question-5 question-heading hidden">
+                <label class="question-label" for="professionalSummary">Professional Summary
+                    <img src="/icons/info-icon.png" onclick="professionalSummary()" class="info" height="15px"> <br>
+                    <span class="question-sub-heading"> <span style="color: red;">*</span> Include 2-3 clear sentences
+                        about your overall experience</span>
+                </label>
+                <textarea name="professionalSummary" id="professionalSummaryInput" class="professionalSummary textarea"
+                    cols="50" rows="7"></textarea>
+            </section>
+
+
+            <!-- city and state  -->
+
+            <section class="question-6 question-heading hidden">
+                <label class="question-label" for="cityName">City
+                    <img src="/icons/info-icon.png" onclick="city()" class="info" height="15px">
+                </label>
+                <input class="input-text" autocomplete="off" type="text" name="cityName" placeholder="e.g. Pune"
+                    id="cityNameInput">
+                <hr class="hr">
+                <br>
+                <label class="for-br question-label" for="stateName">State
+                    <img src="/icons/info-icon.png" onclick="state()" class="info" height="15px">
+                </label>
+                <input class="input-text" autocomplete="off" type="text" name="stateName" placeholder="e.g. Maharashtra"
+                    id="stateNameInput">
+                <hr class="hr">
+            </section>
+
+
+            <!-- skills-->
+
+            <section class="question-7 question-heading hidden">
+                <label class="question-label" for="skills">Skills
+                    <img src="/icons/info-icon.png" onclick="skills()" class="info" height="15px"> <br>
+                    <span class="question-sub-heading"> <span style="color: red;">*</span> Add skills seperated by
+                        commas</span>
+                </label>
+                <textarea name="skills" id="skillsInput" placeholder="e.g. Teamwork, Marketing, Data Analysts"
+                    class="skills textarea" cols="40" rows="7"></textarea>
+            </section>
+
+
+            <!-- work experience / Interships / projects  -->
+
+            <section class="question-8 question-heading hidden">
+                <label class="question-label" for="experience">Work Experience / Interships / Projects
+                    <img src="/icons/info-icon.png" onclick="experience()" class="info" height="15px">
+                    <span class="question-sub-heading">
+                </label>
+
+                <textarea name="experience" id="experienceInput" class="experience textarea" cols="65"
+                    rows="9"></textarea>
+            </section>
+
+            <!-- education college degree  -->
+            <section class="question-9 question-heading hidden">
+                <label class="question-label" for="education">Education
+                    <span class="question-sub-heading">
+                </label>
+
+                <input class="input-text" autocomplete="off" type="text" name="education" placeholder="Degree"
+                    id="degreeNameInput">
+                <hr class="hr">
+
+                <input class="for-br input-text" autocomplete="off" type="text" name="education" placeholder="College"
+                    id="collegeNameInput">
+                <hr class="hr">
+
+                <label class="for-br label-sub-heading" for="startDate">Start Date </label>
+                <input placeholder="" class="input-text" type="date" name="startDate" id="startDateInput">
+                <hr class="hr">
+
+                <label class="for-br label-sub-heading" for="endDate">End Date </label>
+                <input placeholder="" class="input-text" type="date" name="endDate" id="endDateInput">
+                <hr class="hr">
+
+            </section>
+
+            <!-- website & social links  -->
+
+            <section class="question-10 question-heading hidden">
+                <label class="question-label" for="cityName">Website & Social Links
+                    <img src="/icons/info-icon.png" class="info" height="15px">
+                </label>
+
+
+                <div class="box-content">
+
+                    <div class="for-br linkedin">
+                        <label class="personal-pw" for="linkedin-profile">LinkedIn</label>
+                        <span><input type="text" class="personal-pw-input-text" name="linkedin-profile"
+                                id="linkedinInput"></span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="question-11 question-heading hidden">
+                <label for="lang" class="question-label">Mention your Languages Fluency</label>
+
+                <div class="engLang">
+                    <label class="engLang" for="engLang">English</label>
+
+                    <select name="engLang" id="eng-options">
+                        <option value="Elementary Proficiency">Elementary proficiency</option>
+                        <option value="Limited Working Proficiency">Limited working proficiency</option>
+                        <option value="Full Professional Proficiency">Full professional proficiency</option>
+                        <option value="Professional Working Proficiency">Professional working proficiency</option>
+                        <option value="Native or Bilingual Proficiency">Native or bilingual proficiency</option>
+
+                    </select>
+
+                </div>
+
+                <div class="hindiLang engLang">
+                    <label class="engLang hindiLang" for="hindiLang">Hindi</label>
+
+                    <select name="hindiLang" id="hindi-options">
+                        <option value="Elementary Proficiency">Elementary proficiency</option>
+                        <option value="Limited Working Proficiency">Limited working proficiency</option>
+                        <option value="Full Professional Proficiency">Full professional proficiency</option>
+                        <option value="Professional Working Proficiency">Professional working proficiency</option>
+                        <option value="Native or Bilingual Proficiency">Native or bilingual proficiency</option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="img">
+                <img id="side-img" src="/assets/q-1.png" alt="">
+            </section>
+        </div>
+        <section class="cta">
+            <div class="next-btn">
+                Next
+            </div>
+        </section>
+    </section>
+
+
+    <div class="download-btn hidden" id="download">
+        Check Details and Download pdf
+    </div>
+
+
+    <!-- RESUME TO BE DOWNLOADED  -->
+    <section id="resume-download-pdf" class="web-resume-d">
+        <!--
+        
+        <div class="name-web-d"> Jane Roe </div>
+
+        <div class="jobTitle-web-d">Business Development Manager</div>
+
+        <div class="professionalSummary-web-d">
+            Professional Business Developer with more than four years of experience in the business development processes. Involved in product testing, management, and development of new business opportunities.
+        </div>
+
+        <div class="email-phoneNumber-location-linkedIn-persoanlWeb-d">
+            <div>
+                <img src="/icons/email.svg" class="resume-icons-d" alt="">
+                jane.roe@gmail.com
+            </div>
+            <div>
+                <img src="/icons/call.svg" class="resume-icons" alt="">
+                9876543210
+            </div>
+            <div>
+                <img src="/icons/location.svg" class="resume-icons" alt="">
+                Pune, Maharashtra
+            </div>
+            <div>
+                <img src="/icons/linkedin.svg" class="resume-icons" alt="">
+                <a class="aa" href="">Jane Roe</a>
+            </div>
+        </div>
+
+        <div class="skills-web-d">
+
+            <div class="skills-head-web-d sub-heading-web-d">SKILLS</div>
+
+            <div id="skills-list" class="skill-list-d">
+                <div>SEO</div>
+                <div>Public Speaking</div>
+                <div>Negotiation</div>
+                <div>Teamwork</div>
+                <div>Decision Making</div>
+                <div>Rearch & Strategy</div>
+                <div>Emotional Inteldivgence</div>
+                <div>Outbound Marketing</div>
+                <div>Email Marketing</div>
+                <div>Google Analytics</div>
+                <div>Sales & Marketing</div>
+                <div>Social Media & Advertising</div>
+            </div>
+        </div>
+
+        <div class="work-experience-web-d">
+            <div class="sub-heading-web-d">WORK EXPERIENCE/ INTERSHIPS/ PROJECTS</div>
+            <ul>
+                <li>Successfully managed $2-3 million budget projects and Successfully achieved the project scheduled
+                    goals.</li>
+                <li>Reviewed constantly the customer feedback and then suggested ways to improve the processes and
+                    customer service levels which increased the satisfaction rate from 81% to 95%.</li>
+                <li>Developed and implemented new marketing sales and plans and defined the Strategy for next 5 years.
+                </li>
+                <li>Ensured that new clients will grow into a loyal customer base in a specialist niche market by
+                    implementing a new loyalty program.</li>
+                <li>Reviewed constantly the customer feedback and then suggested ways to improve the processes and
+                    customer service levels which increased the satisfaction rate from 81% to 95%.</li>
+                <li>Successfully managed $2-3 million budget projects and Successfully achieved the project scheduled
+                    goals.</li>
+            </ul>
+        </div>
+
+        <div class="education-web-d">
+            <div class="sub-heading-web-d">EDUCATION</div>
+            <div class="degreeName-web-d">
+                MSc in Economics and Business Administration
+            </div>
+
+            <div class="collegeName-web-d">
+                The University of Chicago
+            </div>
+
+            <div class="startDAte-endDate-web-d">
+                09/2008 - 06/2010
+            </div>
+        </div>
+
+        <div class="lang-web-d">
+            <div class="sub-heading-web-d">LANGUAGES</div>
+
+            <div class="lang-web-div-d">
+
+                <div class="english-web-d">
+                    <div>English</div>
+                    <span>Native or Bilingual Proficiency</span>
+                </div>
+
+                <div class="hindi-web-d">
+                   <div>Hindi </div>
+                    <span>Full Working Proficiency</span>
+                </div>
+
+            </div>
+
+        </div>
+    -->
+
+    </section>
+
+
+</body>
+
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=lqc5zenB"></script>
+<script src="/js/creation.js"></script>
+<script src="/js/speak-function.js"></script>
+<script src="/js/download.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"
+    integrity="sha512-ICHkAOXzVDEkL5xkXjAWRV/hx6Bq4ID/uhRcnj9zS7QCdCbhVtfgjwt/vTfUBtW1wzBkErImU0huK3LDVeEr8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
+
+
+<!-- 344+48+129+172+117+330+47+15+10 -->
