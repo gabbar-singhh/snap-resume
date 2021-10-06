@@ -1,7 +1,3 @@
-.hidden {
-  display: none;
-}
-
 .web-resume-d {
   margin: 1cm 1cm;
   box-sizing: border-box;
@@ -116,7 +112,7 @@
 .download-btn {
   background-color: rgb(250, 49, 49);
   color: white;
-  display: inline-block;
+  display: inline;
   margin-left: 1cm;
   padding: 8px 15px;
   box-shadow: 15px 15px 15px lightgray;
@@ -126,4 +122,8 @@
 .download-btn:hover {
   background-color: rgb(241, 72, 72);
   transition: all 400ms ease;
+}
+
+.hidden {
+  display: none;
 }
