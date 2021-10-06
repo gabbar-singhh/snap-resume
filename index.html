@@ -1,122 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS and fav-icon Files  -->
     <link rel="stylesheet" href="/css/home.css" />
-    <link rel="shortcut icon" href="/icons/main-icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/icons/main-icon.svg" type="image/x-icon" />
 
     <!-- AOS Animation  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
 
     <title>Create Your Resume in Minutes</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- navigation-bar  -->
     <section class="menu-items">
-        <ul>
-            <li id="feedback-li"><a href="#footer-div">Feedback</a></li>
-            <li id="home-li"><a href="/index.html">Home</a></li>
-        </ul>
+      <ul>
+        <li id="feedback-li"><a href="#footer-div">Feedback</a></li>
+        <li id="home-li"><a href="/index.html">Home</a></li>
+      </ul>
     </section>
 
     <!-- front page which also contains heading, subheading and click-through-actions -->
     <section class="front-pg">
-        <div>
-            <h1>CREATE YOUR RESUME IN MINUTES</h1>
+      <div>
+        <h1>CREATE YOUR RESUME IN MINUTES</h1>
 
-            <div class="animated-text">Why Don't You Give it a Try? 😉️</div>
+        <div class="animated-text">Why Don't You Give it a Try? 😉️</div>
+      </div>
+
+      <div class="front-cta">
+        <div class="cta">
+          <div class="cta-next">
+            <span><a href="#help">Show me How?</a></span>
+          </div>
+
+          <div id="createNewBtn" class="cta-next">
+            <span><a href="/files/creation.html">Create a New Resume</a></span>
+          </div>
         </div>
-
-        <div class="front-cta">
-            <div class="cta">
-                <div class="cta-next">
-                    <span><a href="#help">Show me How?</a></span>
-                </div>
-
-                <div id="createNewBtn" class="cta-next">
-                    <span><a href="/files/creation.html">Create a New Resume</a></span>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <br>
+    <br />
 
-<section id="help" class="help">
-
-    <div class="help-div">
-
-        <div class="help-heading" data-aos-duration="1000" data-aos="fade-up">HOW TO USE ?</div>
+    <!-- 
+    **SECTION HELP : HOW TO USE ?**
+    CONTAINS - IMAGES AND ANIMATION
+    -->
+    <section id="help" class="help">
+      <div class="help-div">
+        <div class="help-heading" data-aos-duration="1000" data-aos="fade-up">
+          HOW TO USE ?
+        </div>
 
         <div class="image-1">
-            <img data-aos-duration="700" data-aos="fade-up" class="" src="/assets/help-img-1.png" height="320px">
-            <div data-aos-duration="700" data-aos="fade-up" class="image-x-text text">Enter your all the details related to your professional carrier</div>
+          <img
+            data-aos-duration="700"
+            data-aos="fade-up"
+            class=""
+            src="/assets/help-img-1.png"
+            height="320px"
+          />
+          <div
+            data-aos-duration="700"
+            data-aos="fade-up"
+            class="image-x-text text"
+          >
+            Enter your all the details related to your professional carrier
+          </div>
         </div>
 
         <div class="image-2">
-            <div class="image-x-text" data-aos-duration="1000" data-aos="fade-up">Then check your all details and click the red download button</div>
+          <div class="image-x-text" data-aos-duration="1000" data-aos="fade-up">
+            Then check your all details and click the red download button
+          </div>
 
-            <img src="/assets/help-img-2.png" data-aos-duration="1000" data-aos="fade-up" height="320px">
+          <img
+            src="/assets/help-img-2.png"
+            data-aos-duration="1000"
+            data-aos="fade-up"
+            height="320px"
+          />
         </div>
-
 
         <div class="image-3">
-            <img src="/assets/help-img-3.png" data-aos-duration="1000" data-aos="fade-up" height="440px">
-            <div class="image-x-text" data-aos-duration="1000" data-aos="fade-up">
-                Your resume will be downloaded as pdf <br> <br> <br>
-            <div class="cta-lets-create-now"><a href="/files/creation.html"> Let's Create Now</a></div>
-
+          <img
+            src="/assets/help-img-3.png"
+            data-aos-duration="1000"
+            data-aos="fade-up"
+            height="440px"
+          />
+          <div class="image-x-text" data-aos-duration="1000" data-aos="fade-up">
+            Your resume will be downloaded as pdf <br />
+            <br />
+            <br />
+            <div class="cta-lets-create-now">
+              <a href="/files/creation.html"> Let's Create Now</a>
             </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <div id="footer-div" class="footer-div">
-
+    <!-- 
+FOOTER: SEND YOUR QUERIES OR REVIEW ALONG WITH SOCIAL MEDIA LINKS AND IMG
+ -->
+    <footer>
+      <div id="footer-div" class="footer-div">
         <div class="contactUs">
-        If you have any queries or want to leave a feedback then <br> please reach out to us via :-
+          If you have any queries or want to leave a feedback then <br />
+          please reach out to us via :-
         </div>
 
         <div class="social-media">
+          <div>
+            <a href="mailto:himanshu001pal@gmail.com"
+              ><img src="/icons/gmail-icon.png" height="40px"
+            /></a>
+          </div>
 
-            <div><a href="mailto:himanshu001pal@gmail.com"><img src="/icons/gmail-icon.png" height="40px"></a></div>
+          <div>
+            <a href="https://www.linkedin.com/in/marvrdx/"
+              ><img src="/icons/linkedin-icon.png" height="40px"
+            /></a>
+          </div>
 
-          <div><a href="https://www.linkedin.com/in/marvrdx/"><img src="/icons/linkedin-icon.png" height="40px"></a></div>
+          <div>
+            <a href="https://www.instagram.com/marvrdx/"
+              ><img src="/icons/instagram-icon.png" height="40px"
+            /></a>
+          </div>
 
-          <div><a href="https://www.instagram.com/marvrdx/"><img src="/icons/instagram-icon.png" height="40px"></a></div>
+          <div>
+            <a href="https://twitter.com/marvrdx"
+              ><img src="/icons/twitter-icon.png" height="40px"
+            /></a>
+          </div>
 
-          <div><a href="https://twitter.com/marvrdx"><img src="/icons/twitter-icon.png" height="40px"></a></div>
-
-          <div><a href="https://www.facebook.com/marvrdx/"><img src="/icons/facebook-icon.png" height="40px"></a></div>
+          <div>
+            <a href="https://www.facebook.com/marvrdx/"
+              ><img src="/icons/facebook-icon.png" height="40px"
+            /></a>
+          </div>
         </div>
+      </div>
+    </footer>
+  </body>
 
-    </div>
+  <!-- OTHER PROJECT JS FILES  -->
+  <script src="/js/home.js"></script>
 
-</footer>
-
-
-</body>
-
-<script src="/js/home.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

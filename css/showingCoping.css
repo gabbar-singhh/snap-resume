@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .web-resume-d {
   margin: 1cm 1cm;
   box-sizing: border-box;
@@ -122,8 +126,4 @@
 .download-btn:hover {
   background-color: rgb(241, 72, 72);
   transition: all 400ms ease;
-}
-
-.hidden {
-  display: none;
 }

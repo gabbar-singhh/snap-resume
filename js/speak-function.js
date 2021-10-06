@@ -1,3 +1,5 @@
+// ALL SPEECH FUNCTIONS 
+
 function jobTitle() {
   responsiveVoice.speak(
     "A job title is a specific designation of a post within an organization, normally associated with a job description that details the tasks and responsabilities that go with it.",

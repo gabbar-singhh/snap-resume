@@ -1,3 +1,4 @@
+// Welcome Speech
 responsiveVoice.speak(
   "Hey Human, Lets start your process of Resume",
   "UK English Female",
@@ -10,7 +11,7 @@ responsiveVoice.speak(
   { rate: 0.8 }
 );
 
-// data
+// Data to be stored in this values
 var jobTitleValue;
 var fullNameValue;
 var emailValue;
@@ -29,10 +30,10 @@ var engValue;
 var hindiValue;
 
 var nextBtnClick = 0;
+
 const navBar = document.querySelector(".menu-items");
 const resumePdf = document.querySelector("#resume-download-pdf");
 const downloadBtn = document.querySelector(".download-btn");
-
 const jobTitleInput = document.querySelector("#jobTitleInput");
 const fullNameInput = document.querySelector("#fullNameInput");
 const emailInput = document.querySelector("#emailInput");
@@ -64,11 +65,10 @@ let question8 = document.querySelector(".question-8");
 let question9 = document.querySelector(".question-9");
 let question10 = document.querySelector(".question-10");
 let question11 = document.querySelector(".question-11");
-
 let main = document.querySelector(".main");
-
 let sideImg = document.querySelector("#side-img");
 
+// What will happen when NEXT BUTTON is clicked
 nextBtn.addEventListener("click", () => {
   nextBtnClick += 1;
 
@@ -181,7 +181,6 @@ nextBtn.addEventListener("click", () => {
     question10.classList.remove("hidden");
   } else if (nextBtnClick == 10) {
     question10.classList.add("hidden");
-    // personalWebValue = personalWebInput.value;
     linkedinValue = linkedinInput.value;
     question11.classList.remove("hidden");
     sideImg.setAttribute("src", "/assets/q-11.png");
@@ -189,9 +188,13 @@ nextBtn.addEventListener("click", () => {
     engValue = engLangInput.value;
     hindiValue = hindiLangInput.value;
 
-    responsiveVoice.speak("Please Check you details, and Download Your Resume.", "UK English Female", {
-      rate: 0.8,
-    });
+    responsiveVoice.speak(
+      "Please Check you details, and Download Your Resume.",
+      "UK English Female",
+      {
+        rate: 0.8,
+      }
+    );
 
     nextBtn.classList.add("hidden");
     sideImg.setAttribute("src", "");
@@ -300,10 +303,11 @@ nextBtn.addEventListener("click", () => {
         "#skills-list-id"
       ).innerHTML += `<div>${element}</div>`;
     });
-
   }
 });
 
+// TRIAL FUNCTION TO GET ALL VALUES 
+// Created coz for **Developing and Testing purpose** 
 function getValues() {
   console.log(jobTitleValue);
   console.log(fullNameValue);
@@ -321,5 +325,4 @@ function getValues() {
   console.log(linkedinValue);
   console.log(engValue);
   console.log(hindiValue);
-  // console.log('done workinf');
 }

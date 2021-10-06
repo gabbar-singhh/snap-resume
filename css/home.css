@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .menu-items {
@@ -16,7 +23,6 @@ html{
   padding-bottom: 15px;
   z-index: 999;
   box-shadow: 5px 5px 20px #b4b4f6;
-  /* position: relative; */
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -25,24 +31,19 @@ html{
 
 .menu-items ul {
   display: flex;
-
   list-style-type: none;
   flex-direction: row-reverse;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    /* float: left; */
-    /* display: block; */
-    /* text-decoration: none; */
 }
 
-.menu-items ul li a{
+.menu-items ul li a {
   text-decoration: none;
   font-weight: 500;
   padding-left: 0px;
   padding-right: 30px;
   cursor: pointer;
   color: #7c83fd;
-
 }
 
 .menu-items ul li a:hover {
@@ -50,11 +51,7 @@ html{
   cursor: pointer;
 }
 
-a{
-  text-decoration: none;
-}
-
-.front-pg{
+.front-pg {
   margin-top: 1cm;
   box-shadow: 15px 15px 50px lightgray;
 }
@@ -93,7 +90,6 @@ a{
   position: relative;
   background-color: #7c83fd;
   text-align: center;
-
   padding-bottom: 70px;
 }
 
@@ -106,7 +102,7 @@ a{
   padding-right: 15px;
 }
 
-.cta-next span a{
+.cta-next span a {
   text-decoration: none;
   background-color: white;
   padding: 14px 20px;
@@ -125,15 +121,14 @@ a{
 }
 
 /* section . help  */
-
-.help-div{
+.help-div {
   padding: 40px 50px;
 }
 
-.help-div .help-heading{
+.help-div .help-heading {
   padding-bottom: 20px;
   padding-left: 50px;
-  color: #1C0C5B;
+  color: #1c0c5b;
   font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 800;
@@ -144,19 +139,19 @@ a{
   cursor: default;
 }
 
-.help-div .image-1{
+.help-div .image-1 {
   display: flex;
 }
 
-.help-div .image-1 img{
-box-shadow: 0px 0px 50px lightgray;
+.help-div .image-1 img {
+  box-shadow: 0px 0px 50px lightgray;
 }
 
-.image-x-text{
+.image-x-text {
   padding-left: 60px;
   padding-top: 100px;
-  color: #1C0C5B;
-  font-family: 'Montserrat', sans-serif;
+  color: #1c0c5b;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 800;
   margin: 0 0 24px;
@@ -164,36 +159,32 @@ box-shadow: 0px 0px 50px lightgray;
   cursor: default;
 }
 
-.help-div .image-2 img{
-box-shadow: 0px 0px 50px lightgray;
-
+.help-div .image-2 img {
+  box-shadow: 0px 0px 50px lightgray;
 }
 
-.image-2{
+.image-2 {
   margin-top: 100px;
   display: flex;
 }
 
-.image-2 div{
+.image-2 div {
   padding-left: 0px;
-  
 }
 
-.image-3{
+.image-3 {
   margin-top: 100px;
   margin-left: 50px;
   display: flex;
-  /* margin-bottom: 24px; */
 }
 
 .image-3 img {
   margin-right: 50px;
-box-shadow: 0px 0px 50px lightgray;
-padding-bottom: 50px;
-
+  box-shadow: 0px 0px 50px lightgray;
+  padding-bottom: 50px;
 }
 
-.image-3 .image-x-text .cta-lets-create-now a{
+.image-3 .image-x-text .cta-lets-create-now a {
   background-color: #6b73fc;
   display: inline-block;
   flex-direction: column;
@@ -205,46 +196,39 @@ padding-bottom: 50px;
   box-shadow: 0px 0px 25px lightgray;
 }
 
-.image-3 .image-x-text .cta-lets-create-now a:hover{
-  background-color:#9398f6;
+.image-3 .image-x-text .cta-lets-create-now a:hover {
+  background-color: #9398f6;
   transition: all ease-in 300ms;
   color: white;
 }
 
-footer .footer-div{
+footer .footer-div {
   display: flex;
   align-items: center;
   background-color: #6b73fc;
   padding: 2cm 2cm;
-
 }
 
-footer .footer-div .contactUs{
+footer .footer-div .contactUs {
   display: inline-block;
   font-size: 22px;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: "Montserrat", sans-serif;
   color: whitesmoke;
   margin-right: 30px;
   cursor: default;
 }
 
-.social-media div{
+.social-media div {
   margin-right: 10px;
-
 }
 
-.social-media{
+.social-media {
   display: flex;
 }
 
-.social-media div:hover{
-  /* background-color:aqua; */
+.social-media div:hover {
   border-radius: 1.9cm;
   filter: grayscale(100%) brightness(108%) saturate(97%) contrast(63%);
--webkit-filter: grayscale(100%) brightness(108%) saturate(97%) contrast(63%);
--moz-filter: grayscale(100%) brightness(108%) saturate(97%) contrast(63%);
-}
-
-.hidden{
-  display:none;
+  -webkit-filter: grayscale(100%) brightness(108%) saturate(97%) contrast(63%);
+  -moz-filter: grayscale(100%) brightness(108%) saturate(97%) contrast(63%);
 }

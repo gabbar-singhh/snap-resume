@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
 /* navigation bar css */
 .menu-items {
   background-color: #7c83fd;
@@ -24,7 +32,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.menu-items ul li a{
+.menu-items ul li a {
   font-weight: 600;
   padding-left: 0px;
   padding-right: 30px;
@@ -93,10 +101,6 @@
   text-decoration: double;
 }
 
-a{
-  text-decoration: none;
-}
-
 .textarea {
   overflow: hidden;
   resize: none;
@@ -156,10 +160,6 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .hindiLang label {
   margin-right: 22px;
   padding-top: 20px;
@@ -177,25 +177,23 @@ select {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.thanks-giving{
-display: flex;
-align-items: center;
-justify-content: center;
-
-
+.thanks-giving {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.thanks-giving .thanks-img{
+.thanks-giving .thanks-img {
   display: inline-flex;
 }
 
-.thanks-giving .thanks-message{
+.thanks-giving .thanks-message {
   font-size: 32px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
 }
 
-.back-to-index a{
+.back-to-index a {
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
@@ -208,5 +206,4 @@ justify-content: center;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 5px 5px 20px #9398f6;
-
 }
