@@ -189,12 +189,7 @@ nextBtn.addEventListener("click", () => {
     engValue = engLangInput.value;
     hindiValue = hindiLangInput.value;
 
-    responsiveVoice.speak(
-      "Thank You for Using Our Service.",
-      "UK English Female",
-      { rate: 0.8 }
-    );
-    responsiveVoice.speak("Please Download Your Resume.", "UK English Female", {
+    responsiveVoice.speak("Please Check you details, and Download Your Resume.", "UK English Female", {
       rate: 0.8,
     });
 
@@ -205,9 +200,8 @@ nextBtn.addEventListener("click", () => {
 
     downloadBtn.classList.remove("hidden");
 
-    let skillsValueArray = skillsValue.replaceAll(" ", "").split(",");
-    let experienceValueArray = experienceValue.split(".");
-    console.log(experienceValueArray);
+    const skillsValueArray = skillsValue.replaceAll(" ", "").split(",");
+    const experienceValueArray = experienceValue.split(".");
 
     let html = `
 
@@ -233,7 +227,7 @@ nextBtn.addEventListener("click", () => {
                 ${cityNameValue}, ${stateNameValue}
             </div>
             <div>
-                <img src="/icons/linkedin.svg" class="resume-icons" alt="">
+                <img src="/icons/linkedin.png" height="20px" class="resume-icons" alt="">
                 <a class="aa" href="#">${fullNameValue}</a>
             </div>
         </div>
