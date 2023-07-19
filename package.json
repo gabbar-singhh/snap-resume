@@ -1,16 +1,15 @@
 {
   "name": "snap-resume",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Create your resume in minutes!",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Himanshu Pal",
   "license": "ISC",
   "dependencies": {
     "next": "^13.4.10",
